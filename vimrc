@@ -1,7 +1,7 @@
 set nu
 syntax on
 set t_Co=256c
-
+set incsearch
 colorscheme distinguished
 
 call pathogen#infect()
