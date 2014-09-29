@@ -13,16 +13,20 @@
 
 alias ucpu1="ssh mjoh9296@ucpu1.ug.it.usyd.edu.au"
 alias htpc="ssh michael@11.1.1.10"
+alias rpi="ssh michael@11.1.1.8"
 alias ls="ls --color=auto"
 alias dir="dir --color=auto"
 alias grep="grep --color=auto"
 alias dmesg='dmesg --color'
 alias tree="tree -C"
+
+export EDITOR="vim"
+
 #PS1='[\u@\h \W]\$ '
 PS1='\[\e[1;32m\][\u@\h \W]\$\[\e[0m\] '
 #PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[0m\]'
 
-
+ssh-add -l >/dev/null || alias ssh='ssh-add -l >/dev/null || ssh-add && unalias ssh; ssh'
 
 date
 echo
