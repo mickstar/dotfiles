@@ -19,6 +19,7 @@ alias dir="dir --color=auto"
 alias grep="grep --color=auto"
 alias dmesg='dmesg --color'
 alias tree="tree -C"
+alias syu="sudo pacman -Syu"
 
 export EDITOR="vim"
 
