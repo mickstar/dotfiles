@@ -1,4 +1,5 @@
 export LANG=en_AU.UTF-8
+export TERM="xterm-256color"
 
 alias ucpu1="ssh mjoh9296@ucpu1.ug.it.usyd.edu.au"
 alias htpc="ssh michael@11.1.1.10"
