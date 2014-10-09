@@ -19,6 +19,6 @@ set shiftwidth=4
 
 "============== Mapping  stuff  ==============
 "create new line with enter without entering insert mode
-nmap <S-Enter> O<Esc>
-nmap <CR> o<Esc>
+"nmap <S-Enter> O<Esc>
+"nmap <CR> o<Esc>
 imap jj <Esc>
