@@ -12,6 +12,8 @@ alias tree="tree -C"
 alias syu="sudo pacman -Syu"
 
 export EDITOR="vim"
+#needed for color in vim
+export tmux="tmux -2"
 
 
 ssh-add -l >/dev/null || alias ssh='ssh-add -l >/dev/null || ssh-add && unalias ssh; ssh'
