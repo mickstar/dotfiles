@@ -17,4 +17,4 @@ compinit
 autoload -U colors && colors
 autoload -U promptinit
 promptinit
-prompt adam1
+prompt adam2
