@@ -1,3 +1,4 @@
+set nocp
 set nu
 syntax on
 set t_Co=256c
