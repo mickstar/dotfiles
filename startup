@@ -1,0 +1,4 @@
+#! /bin/sh
+
+python ~/.config/awesome/scripts/wallpaper.py &
+
