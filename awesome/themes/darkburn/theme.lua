@@ -32,8 +32,8 @@ theme.border_marked = "#CC9393"
 -- }}}
 
 -- {{{ Titlebars
-theme.titlebar_bg_focus  = "#BFBFBF"
-theme.titlebar_bg_normal = "#BFBFBF"
+theme.titlebar_bg_focus  = "#262626"
+theme.titlebar_bg_normal = "#3a3a3a"
 -- }}}
 
 -- There are other variable sets
