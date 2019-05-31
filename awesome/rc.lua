@@ -48,10 +48,12 @@ os.execute("/home/michael/.startup")
 -- This is used later as the default terminal and editor to run.
 terminal = "sakura"
 editor = os.getenv("EDITOR") or "vim"
-webbrowser = "chromium"
+webbrowser = "firefox -P Michael"
 filemanager = "nemo"
 editor_cmd = terminal .. " -e " .. editor
-screensaver_command = "i3lock --image=/home/michael/Pictures/forbidden_fruit.png -f -e -I 5"
+--screensaver_command = "i3lock --image=/home/michael/Pictures/forbidden_fruit.png -f -e -I 5"
+screensaver_command = "i3lock --image=/home/michael/Wallpapers/dancehall.jpg -f -e -t -I 5"
+
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -304,7 +306,7 @@ globalkeys = awful.util.table.join(
      awful.key({}, "Print", function() awful.util.spawn ("gnome-screenshot") end),
      awful.key({}, "XF86AudioLowerVolume", function () awful.util.spawn("amixer set Master 5%-") end),
      awful.key({}, "XF86AudioRaiseVolume", function () awful.util.spawn("amixer set Master 5%+") end), 
-     awful.key({ modkey }, "l", function () awful.util.spawn(screensaver_command) end),
+     awful.key({ modkey,   "Shift" }, "l", function () awful.util.spawn(screensaver_command) end),
      awful.key({ modkey,   "Shift" }, "Return", function () awful.util.spawn(filemanager) end),
      awful.key({ modkey,           }, "b", function () awful.util.spawn(webbrowser) end),
      awful.key({ modkey }, "s", function () menubar.show() end),
