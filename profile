@@ -4,7 +4,6 @@ export QT_GRAPHICSSYSTEM=native
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 alias ucpu1="ssh mjoh9296@ucpu1.ug.it.usyd.edu.au"
 alias htpc="ssh michael@11.1.1.10"
-alias rpi="ssh michael@11.1.1.8"
 alias ls="ls --color=auto"
 alias dir="dir --color=auto"
 alias grep="grep --color=auto"
