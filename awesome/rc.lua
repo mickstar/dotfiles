@@ -51,7 +51,7 @@ editor = os.getenv("EDITOR") or "vim"
 webbrowser = "chromium"
 filemanager = "nemo"
 editor_cmd = terminal .. " -e " .. editor
-screensaver_command = "i3lock --image=/home/michael/Sync/Wallpapers/forbidden_fruit.png -f -e -t -I 5"
+screensaver_command = "i3lock --image=/home/michael/Pictures/forbidden_fruit.png -f -e -I 5"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -310,10 +310,7 @@ globalkeys = awful.util.table.join(
 
     -- Standard program
      awful.key({}, "Print", function() awful.util.spawn ("gnome-screenshot") end),
-	 awful.key({}, "XF86AudioPlay", function () awful.util.spawn("clementine --play-pause") end),
-     awful.key({}, "XF86AudioNext", function () awful.util.spawn("clementine --next") end),
-	 awful.key({}, "XF86AudioPrev", function () awful.util.spawn("clementine --previous") end),
-	 awful.key({}, "XF86AudioLowerVolume", function () awful.util.spawn("amixer set Master 5%-") end),
+     awful.key({}, "XF86AudioLowerVolume", function () awful.util.spawn("amixer set Master 5%-") end),
      awful.key({}, "XF86AudioRaiseVolume", function () awful.util.spawn("amixer set Master 5%+") end), 
      awful.key({ modkey,   "Shift" }, "l", function () awful.util.spawn(screensaver_command) end),
      awful.key({ modkey,   "Shift" }, "Return", function () awful.util.spawn(filemanager) end),
