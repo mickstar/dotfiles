@@ -3,7 +3,4 @@
 xss-lock -- i3lock -i /home/michael/wallpapers/dancehall.png -f -e -I 5 &
 /home/michael/dotfiles/scripts/wallpaper.py &
 #set mouse
-synclient TapButton1=1
-synclient TapButton2=2
-synclient TapButton3=3
 pcloud &

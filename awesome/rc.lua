@@ -71,7 +71,7 @@ function run_once(prg)
   awful.util.spawn_with_shell("pgrep -u $USER -x " .. prg .. " || (" .. prg .. ")")
 end
 
-procs = {"nm-applet","xfce4-power-manager", "pnmixer", "~/.startup"}
+procs = {"nm-applet","xfce4-power-manager", "pnmixer"}
 for k = 1, #procs do
   run_once(procs[k])
 end
@@ -312,6 +312,9 @@ globalkeys = awful.util.table.join(
      awful.key({}, "Print", function() awful.util.spawn ("gnome-screenshot") end),
      awful.key({}, "XF86AudioLowerVolume", function () awful.util.spawn("amixer set Master 5%-") end),
      awful.key({}, "XF86AudioRaiseVolume", function () awful.util.spawn("amixer set Master 5%+") end), 
+ 	 awful.key({}, "XF86AudioPlay", function () awful.util.spawn("clementine --play-pause") end),
+     awful.key({}, "XF86AudioNext", function () awful.util.spawn("clementine --next") end),
+	 awful.key({}, "XF86AudioPrev", function () awful.util.spawn("clementine --previous") end),
      awful.key({ modkey,   "Shift" }, "l", function () awful.util.spawn(screensaver_command) end),
      awful.key({ modkey,   "Shift" }, "Return", function () awful.util.spawn(filemanager) end),
      awful.key({ modkey,           }, "b", function () awful.util.spawn(webbrowser) end),
