@@ -2,6 +2,7 @@ export LANG=en_AU.UTF-8
 export TERM=xterm-256color
 export QT_GRAPHICSSYSTEM=native
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+export JAVA_HOME="/usr/lib/jvm/java-12-openjdk"
 alias ucpu1="ssh mjoh9296@ucpu1.ug.it.usyd.edu.au"
 alias htpc="ssh michael@11.1.1.10"
 alias rpi="ssh michael@11.1.1.8"

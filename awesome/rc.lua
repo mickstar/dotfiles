@@ -48,7 +48,7 @@ os.execute("/home/michael/.startup")
 -- This is used later as the default terminal and editor to run.
 terminal = "sakura"
 editor = os.getenv("EDITOR") or "vim"
-webbrowser = "firefox -P Michael"
+webbrowser = "chromium"
 filemanager = "nemo"
 editor_cmd = terminal .. " -e " .. editor
 --screensaver_command = "i3lock --image=/home/michael/Pictures/forbidden_fruit.png -f -e -I 5"
@@ -73,7 +73,7 @@ function run_once(prg)
   awful.util.spawn_with_shell("pgrep -u $USER -x " .. prg .. " || (" .. prg .. ")")
 end
 
-procs = {"nm-applet","xfce4-power-manager", "pnmixer"}
+procs = {"nm-applet","xfce4-power-manager", "volumeicon"}
 for k = 1, #procs do
   run_once(procs[k])
 end
